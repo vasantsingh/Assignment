@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	font-family:'Roboto Mono', monospace;
+	min-height: 100vh;
+	
+}
+
+table{
+	width:  1000px;
+	margin: 41px auto;
+	border-style: groove;
+	border-radius: 0.2rem;
+	border-color: #f7f7f7;
+	padding: 0px 24px 0px 24px ;
+}
+
+th{
+	height:41px;
+	border:  thin solid #d4d4d4;
+	font-family:'Roboto Mono', monospace; 
+	font-size: 14px;
+	font-weight: bold;
+	margin:14px 0px 13px 0px ;
+	border-radius: 0.2rem;
+	background-color: #f7f7f7;
+}
+th:hover{
+	background-color: #f0f6ff;
+}
+td{
+	margin:14px 0px 13px 0px ;
+	width: 41px;
+	text-align: center;
+	height: 41px;
+	font-family:'Roboto Mono', monospace; 
+	font-size: 14px;
+	font-weight: 400;	
+}
+td:hover{
+	background-color: #f0f6ff;
+}
+tr:nth-child(even){
+	background-color: #ffffff;
+}
+tr:nth-child(odd){
+	background-color: #f7f7f7;
+}
+.table-sortable th {
+	cursor: pointer;
+  }
+  
+  .table-sortable .th-sort-asc::after {
+	content: "\25b4";
+  }
+  
+  .table-sortable .th-sort-desc::after {
+	content: "\25be";
+  }
+  
+  .table-sortable .th-sort-asc::after,
+  .table-sortable .th-sort-desc::after {
+	margin-left: 5px;
+  }
+  
+  .table-sortable .th-sort-asc,
+  .table-sortable .th-sort-desc {
+	background: rgba(0, 0, 0, 0.1);
+  }
+  
